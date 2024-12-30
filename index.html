@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about {
+            text-align: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 1rem auto;
+            border: 2px solid #333;
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .contact form {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact label {
+            margin-top: 10px;
+            text-align: left;
+            width: 100%;
+        }
+        .contact input, .contact textarea, .contact button {
+            width: 100%;
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        .contact button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>Firman nur rahim</h2>
+            <section id="about" class="about">
+                <img src="gambar/saya.jpg" alt="Profile Picture" class="profile-pic">
+                <p>Hello, my name is Firman. I created this portfolio to fulfill a college assignment for the Network Administration course. I also created this portfolio to develop my skills in programming. I chose to concentrate on networking because I want to deepen my skills and learn more about networks and network security.
+
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>A description of the project goes here.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>A description of the project goes here.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>A description of the project goes here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+             <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
